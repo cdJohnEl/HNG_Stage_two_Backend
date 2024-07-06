@@ -1,9 +1,15 @@
 module.exports = {
-    database: 'hng_stage2',
-    username: 'cdjohnel',
+    database: 'postgres',
+    username: 'postgres.meszaywdmtfzcygyjnrv',
     password: 'easykeljohn7',
-    host: 'localhost',
+    host: 'aws-0-eu-central-1.pooler.supabase.com',
     dialect: 'postgres',
-    secret: 'your_jwt_secret_key', // Replace with a secure key
-    DATABASE_URL: process.env.APP_ENV === 'test' == 'test' ? 'postgres://postgres:easykeljohn7@localhost:5432/hng_stage2' : 'postgres://postgres:password@localhost:5432/hngstage2'
+    dialectOptions: {
+        ssl: {
+            require: true,
+            rejectUnauthorized: false, 
+        }
+    },
+    secret: 'your_jwt_secret_key',
+    DATABASE_URL: 'postgresql://postgres.meszaywdmtfzcygyjnrv:easykeljohn7@aws-0-eu-central-1.pooler.supabase.com:6543/postgres'
 };
