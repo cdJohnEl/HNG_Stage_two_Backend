@@ -4,16 +4,16 @@ const { Pool } = require('pg');
 
 // const sequelize = new Sequelize(config.DATABASE_URL) // Example for postgres
 const sequelize = new Sequelize(config.database, config.username, config.password, {
-    host: 'localhost',
+    host: 'aws-0-eu-central-1.pooler.supabase.com',
     dialect: 'postgres', // or 'mysql', 'sqlite', etc.
 });
 
 const pool = new Pool({
     user: config.username,
-    host: 'localhost',
+    host: 'aws-0-eu-central-1.pooler.supabase.com',
     database: config.database,
     password: config.password,
-    port: 5432,
+    port: 6543,
 });
   
 
