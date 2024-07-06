@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "cdjohnel",
+    "password": "easykeljohn7",
+    "database": "hng_stage2",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "cdjohnel",
+    "password": "easykeljohn7",
+    "database": "hngstage2",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
